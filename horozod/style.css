@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+.dropdown-submenu {
+  position: relative;
+}
+body{
+  background-color: #b4b4b4;
+}
+.formi{
+  max-width: 500px;
+  margin: auto; 
+}
+.cent{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.spacee{
+  height: 450px;
+}
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+html, body{
+  height:100% ;
+  width: 100%;
+  font-family: 'Poppins','sans-serif';
+  color: #222; 
+}
+.navbar{
+  padding: .8rem;
+
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+nav img{
+  height: 80px;
+}
+.nav-link{
+  font-size: 1.1em !important;
+}
+.carousel-inner img{
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.btn-default{
+  margin-top: 10px;
+  background-color: #868a60;
+  border: 1px solid #868a60;
+}
+.btn-default:hover {
+  background-color: #c7a65c;
+  border: 1px solid #c7a65c;
+}
+.finalt{
+  margin-top: 10px;
+  color:  #c7a65c;
+}
+.jumbotron{
+  padding: 1rem;
+  border-radius: 0;
+}
+.padding{
+  padding-bottom: 2rem;
+}
+.welcome{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr{
+  border-top:2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+.fa-code{
+  color: #e54d26;
+}
+.fa-bold{
+  color:#563d7c; 
+}
+.fa-css3{
+  color: #2163af;
+}
+.fa-code, .fa-bold, .fa-css3 {
+  font-size: 4em;
+  margin: 1rem;
+}
+.fun{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.gif {
+  max-width: 100%;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-google {
+  color: #dd4b39;
+}
+.fa-instagram{
+  color: #517fa4;
+}
+.fa-facebook:hover,.fa-twitter:hover,
+.fa-google:hover,.fa-instagram:hover{
+color: #d5d5d5;
+}
+footer{
+  background-color:#143045;
+  color: #d5d5d5;
+  padding-top: 2rem;
+  text-align: center;
+}
+hr.light {
+  border-top: 1px solid #B98D3B;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #d5d5d5;
+}
+hr{
+  border-top: 1px solid #B98D3B
+}
+form{
+  align-content: center;
+  background-color: #1d7e7c;
+}
+.io{
+  text-si
+}
+footer img{
+  height: 80px;
+  width: 214px;
+  margin: 0;
+  padding: none;
+}
+hr.light-100 {
+  border-top: 1px solid #B98D3B;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+#second{
+  margin-top: 27px;
+}
+
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: auto; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px,max-width: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 2px;}
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a{
+    font-size: 4em;
+    padding: 2rem; 
+  }
+  }
+@media (max-width: 768px) {
+  .carousel-caption{
+  top: 45%;
+}
+.carousel-caption h1 {
+  font-size: 350%;
+}
+.carousel-caption h3 {
+  font-size: 140%;
+  font-weight: 400;
+  padding-bottom: .2rem;
+}
+.carousel-caption-btn{
+  font-size:95%;
+  padding: 8px 14px;
+}
+.display-4{
+  font-size: 200%;
+}
+.social a{
+  font-size: 2.5em;
+  padding:1.2rem;
+}
+}
+@media (max-width: 576px) {
+.carousel-caption{
+  top: 40%;
+}
+.carousel-caption h1 {
+  font-size: 250%;
+}
+.carousel-caption h3 {
+  font-size: 110%;
+}
+.carousel-caption-btn{
+  font-size: 90%;
+  padding: 4px 8px;
+}
+.carousel-indicators{
+  display: none;
+}
+.display-4{
+  font-size: 160%;
+}
+.social a{
+  font-size: 2em;
+  padding: .7rem;
+}
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/5.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+

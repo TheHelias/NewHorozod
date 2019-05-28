@@ -1,8 +1,12 @@
 $(document).ready(function(){
+   //to make the mouse focus on the surname input for typing
    $("#theSurname").focus();
+   //DOM to get the form from the html
    var form = document.getElementById("form-work")
+   //Function that gets the result of the child function and uses it to determine final output from the API
 const Horozod=e=> {
-      e.preventDefault();
+      e.preventDefault();//to prevent the from from acting like a regular form
+      //function that takes the input to determine the zodiac sign which is then used by the parent function to get results
       const Horozod2 =()=> {
          let day = $("#dateInput").val(), month =$("#monthInput").val();  
          if (month === 'January' && day<=19 && day>0){
@@ -56,12 +60,14 @@ const Horozod=e=> {
          }else {
              return 'ERROR';};
       }
+      //to get data from the source horoscope API 
       $.ajax({
          url :'https://aztro.sameerkumar.website?sign=' + Horozod2()+ '&day=today',
          type: 'POST',
          success: function(data){
             console.log(data);
             var Lefirstname = $("#theFirstName").val();
+            //to display results in the HTML in a particular order
       $('#horo').html("Zodiac Sign: "+ Horozod2() + '<br>'
        + 'Compatibility: ' + data.compatibility + '<br>'
         + 'Mood: ' + data.mood + '<br>'
@@ -70,6 +76,7 @@ const Horozod=e=> {
          
       })
    }
+   //this tells the app to wait for the submit button to be clicked before running the function.
    window.onload = function(){
       form.addEventListener('submit', Horozod)
    }

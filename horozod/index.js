@@ -1,12 +1,10 @@
 $(document).ready(function(){
-   //to make the mouse focus on the surname input for typing
    $("#theSurname").focus();
-   //DOM to get the form from the html
    var form = document.getElementById("form-work")
-   //Function that gets the result of the child function and uses it to determine final output from the API
+   //Function that gets the result of the child function, uses it to determine final results from the API and display an output 
 const Horozod=e=> {
-      e.preventDefault();//to prevent the from from acting like a regular form
-      //function that takes the input to determine the zodiac sign which is then used by the parent function to get results
+      e.preventDefault();
+      //Function that takes the input to determine the zodiac sign which is then used by the parent function to get results 
       const Horozod2 =()=> {
          let day = $("#dateInput").val(), month =$("#monthInput").val();  
          if (month === 'January' && day<=19 && day>0){
@@ -60,14 +58,12 @@ const Horozod=e=> {
          }else {
              return 'ERROR';};
       }
-      //to get data from the source horoscope API 
       $.ajax({
          url :'https://aztro.sameerkumar.website?sign=' + Horozod2()+ '&day=today',
          type: 'POST',
          success: function(data){
             console.log(data);
             var Lefirstname = $("#theFirstName").val();
-            //to display results in the HTML in a particular order
       $('#horo').html("Zodiac Sign: "+ Horozod2() + '<br>'
        + 'Compatibility: ' + data.compatibility + '<br>'
         + 'Mood: ' + data.mood + '<br>'

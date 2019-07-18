@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+body{
+  background-color: #b4b4b4;
+}
+.formi{
+  max-width: 500px;
+  margin: auto; 
+}
+.cent{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+html, body{
+  height:100% ;
+  width: 100%;
+  font-family: 'Poppins','sans-serif';
+  color: #222; 
+}
+
+.btn-default{
+  margin-top: 10px;
+  background-color: #868a60;
+  border: 1px solid #868a60;
+}
+.btn-default:hover {
+  background-color: #c7a65c;
+  border: 1px solid #c7a65c;
+}
+.finalt{
+  margin-top: 10px;
+  color:  #c7a65c;
+}
+
+footer{
+  background-color:#143045;
+  color: #d5d5d5;
+  padding-top: 2rem;
+  margin-top: 100px ;
+  text-align: center;
+}
+hr.light {
+  border-top: 1px solid #B98D3B;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #d5d5d5;
+}
+hr{
+  border-top: 1px solid #B98D3B
+}
+form{
+  align-content: center;
+  background-color: #1d7e7c;
+}
+
+hr.light-100 {
+  border-top: 1px solid #B98D3B;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px, max-width: 450px) {
+ 
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  
+  }
+@media (max-width: 768px) {
+  
+.display-4{
+  font-size: 200%;
+}
+
+}
+@media (max-width: 576px) {
+
+.display-4{
+  font-size: 160%;
+}
+
+}
+
+
+
+
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
